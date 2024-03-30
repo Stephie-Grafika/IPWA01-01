@@ -7,6 +7,18 @@ body{
 }
 /*Navigation*/
 
+#logo{
+    max-width: 350px;
+    padding: 5%;
+}
+
+/* Footer */
+
+.footericon{
+    max-width: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 /*Typo*/
 
@@ -48,5 +60,4 @@ body{
 	.only-desktop{
 		display:none;
 	}
-	
 }
