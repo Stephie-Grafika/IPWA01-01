@@ -1,0 +1,52 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	/*background-size: auto 100%;*/
+	background-size: 100% 100%;
+}
+/*Navigation*/
+
+
+/*Typo*/
+
+.right{
+	 text-align: right;
+}
+
+.left{
+	 text-align: left;
+}
+
+.center{
+	text-align: center;
+}
+
+/*Responsive*/
+
+.only-mobile{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+
+@media screen and (min-width: 1023px) and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 767px) {
+	
+	.only-mobile{
+		display:initial;
+	}
+				
+	.only-desktop{
+		display:none;
+	}
+	
+}
