@@ -3,516 +3,526 @@
     <head>
         <!-- Required meta tags -->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="author" content="Stephanie Ott" />
         <meta name="description" content="Website der Non-Profit-Organisation CO2" />
 
 		<!-- CSS -->
         <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="assets/css/color.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <titel>IPWA01</titel>
+        <!-- Titel der Website -->
+        <div class="container-xl">
+            <titel class="text-black-50">IPWA01-01 Fallstudie, Aufgabenstellung 1: CO2-Footprint</titel>
+        </div>
     </head>
-    <body class="m-5" dir="auto">
-        <header>
-            <img src="assets/img/Logo.png" alt="Logo" id="logo" class="mt-3 mb-3">
-            <nav>
-                <ul>
-                    <li class="d-inline pe-1"><a href="index.html" class="link-dark">Startseite</a></li>
-                    <li class="d-inline p-1"><a href="#" class="link-dark">Über uns</a></li>
-                    <li class="d-inline p-1"><a href="#" class="link-dark">Kontakt</a></li>
-                </ul>
-            </nav>
-            <hr class="mt-5 mb-5">
-        </header>
-        <main>
-            <div class="row align-items-start mb-3">
-                <div class="col-lg-12">
-                    <h1 class="text-success">Klimawandel betrifft uns alle!</h1>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                </div>
-               <div class="col-lg-6 col-sm-12">
-                 <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.</p>
-               </div>
-            </div>
-            
-            <div class="row">
-                <div class="container-fluid">
-                    <div class="table-responsive">
-                        <h2 class="text-success">CO2-Fußabdruck von Unternehmen der EU-Länder 2023</h2>
-                        <br>
-                        <div class="input-group">
-                            <span class="input-group-text">Nach Land filtern:</span>
-                            <input type="text" placeholder="Land" class="form-control" id="searchInputCountry" onkeyup="filterTable('searchInputCompany', 'searchInputCountry')">
-                            <span class="input-group-text" >Nach Unternehmen filtern:</span>
-                            <input type="text" placeholder="Unternehmen" class="form-control" id="searchInputCompany" onkeyup="filterTable('searchInputCompany', 'searchInputCountry')">
-                          </div>
-                        <br>
-                        <table class="table table-bordered table-hover" id="co2-tabelle">
-                            <caption>Quelle: Eigene Darstellung.</caption>
-                            <thead class="align-top">
-                                <tr>
-                                    <th>Land</th>
-                                    <th>Unternehmen</th>
-                                    <th>CO2-Emissionen<br>in Tonnen</th>
-                                </tr>
-                            </thead>
-                            <tbody class="align-top">
-                                <tr>
-                                    <td>BE</td>
-                                    <td>Unternehmen 0001</td>
-                                    <td>12000</td>
-                                </tr>
-                                <tr>
-                                    <td>BE</td>
-                                    <td>Unternehmen 0002</td>
-                                    <td>15000</td>
-                                </tr>
-                                <tr>
-                                    <td>BE</td>
-                                    <td>Unternehmen 0003</td>
-                                    <td>11000</td>
-                                </tr>
-                                <tr>
-                                    <td>BG</td>
-                                    <td>Unternehmen 0004</td>
-                                    <td>18000</td>
-                                </tr>
-                                <tr>
-                                    <td>BG</td>
-                                    <td>Unternehmen 0005</td>
-                                    <td>20000</td>
-                                </tr>
-                                <tr>
-                                    <td>BG</td>
-                                    <td>Unternehmen 0006</td>
-                                    <td>17000</td>
-                                </tr>
-                                <tr>
-                                    <td>DK</td>
-                                    <td>Unternehmen 0007</td>
-                                    <td>14000</td>
-                                </tr>
-                                <tr>
-                                    <td>DK</td>
-                                    <td>Unternehmen 0008</td>
-                                    <td>16000</td>
-                                </tr>
-                                <tr>
-                                    <td>DK</td>
-                                    <td>Unternehmen 0009</td>
-                                    <td>13000</td>
-                                </tr>
-                                <tr>
-                                    <td>DE</td>
-                                    <td>Unternehmen 0010</td>
-                                    <td>25000</td>
-                                </tr>
-                                <tr>
-                                    <td>DE</td>
-                                    <td>Unternehmen 0011</td>
-                                    <td>22000</td>
-                                </tr>
-                                <tr>
-                                    <td>DE</td>
-                                    <td>Unternehmen 0012</td>
-                                    <td>27000</td>
-                                </tr>
-                                <tr>
-                                    <td>EE</td>
-                                    <td>Unternehmen 0013</td>
-                                    <td>9000</td>
-                                </tr>
-                                <tr>
-                                    <td>EE</td>
-                                    <td>Unternehmen 0014</td>
-                                    <td>9500</td>
-                                </tr>
-                                <tr>
-                                    <td>EE</td>
-                                    <td>Unternehmen 0015</td>
-                                    <td>8800</td>
-                                </tr>
-                                <tr>
-                                    <td>FI</td>
-                                    <td>Unternehmen 0016</td>
-                                    <td>20000</td>
-                                </tr>
-                                <tr>
-                                    <td>FI</td>
-                                    <td>Unternehmen 0017</td>
-                                    <td>18000</td>
-                                </tr>
-                                <tr>
-                                    <td>FI</td>
-                                    <td>Unternehmen 0018</td>
-                                    <td>21000</td>
-                                </tr>
-                                <tr>
-                                    <td>FR</td>
-                                    <td>Unternehmen 0019</td>
-                                    <td>28000</td>
-                                </tr>
-                                <tr>
-                                    <td>SA</td>
-                                    <td>Unternehmen 0020</td>
-                                    <td>32000</td>
-                                </tr>
-                                <tr>
-                                    <td>SO</td>
-                                    <td>Unternehmen 0021</td>
-                                    <td>35000</td>
-                                </tr>
-                                <tr>
-                                    <td>GR</td>
-                                    <td>Unternehmen 0022</td>
-                                    <td>29000</td>
-                                </tr>
-                                <tr>
-                                    <td>GR</td>
-                                    <td>Unternehmen 0023</td>
-                                    <td>27000</td>
-                                </tr>
-                                <tr>
-                                    <td>GR</td>
-                                    <td>Unternehmen 0024</td>
-                                    <td>30000</td>
-                                </tr>
-                                <tr>
-                                    <td>IE</td>
-                                    <td>Unternehmen 0025</td>
-                                    <td>24000</td>
-                                </tr>
-                                <tr>
-                                    <td>IE</td>
-                                    <td>Unternehmen 0026</td>
-                                    <td>23000</td>
-                                </tr>
-                                <tr>
-                                    <td>IE</td>
-                                    <td>Unternehmen 0027</td>
-                                    <td>25000</td>
-                                </tr>
-                                <tr>
-                                    <td>IT</td>
-                                    <td>Unternehmen 0028</td>
-                                    <td>31000</td>
-                                </tr>
-                                <tr>
-                                    <td>IT</td>
-                                    <td>Unternehmen 0029</td>
-                                    <td>32000</td>
-                                </tr>
-                                <tr>
-                                    <td>IT</td>
-                                    <td>Unternehmen 0030</td>
-                                    <td>30000</td>
-                                </tr>
-                                <tr>
-                                    <td>HR</td>
-                                    <td>Unternehmen 0031</td>
-                                    <td>12000</td>
-                                </tr>
-                                <tr>
-                                    <td>HR</td>
-                                    <td>Unternehmen 0032</td>
-                                    <td>11000</td>
-                                </tr>
-                                <tr>
-                                    <td>HR</td>
-                                    <td>Unternehmen 0033</td>
-                                    <td>13000</td>
-                                </tr>
-                                <tr>
-                                    <td>LV</td>
-                                    <td>Unternehmen 0034</td>
-                                    <td>17000</td>
-                                </tr>
-                                <tr>
-                                    <td>LV</td>
-                                    <td>Unternehmen 0035</td>
-                                    <td>18000</td>
-                                </tr>
-                                <tr>
-                                    <td>LV</td>
-                                    <td>Unternehmen 0036</td>
-                                    <td>16000</td>
-                                </tr>
-                                <tr>
-                                    <td>LT</td>
-                                    <td>Unternehmen 0037</td>
-                                    <td>19000</td>
-                                </tr>
-                                <tr>
-                                    <td>LT</td>
-                                    <td>Unternehmen 0038</td>
-                                    <td>20000</td>
-                                </tr>
-                                <tr>
-                                    <td>LT</td>
-                                    <td>Unternehmen 0039</td>
-                                    <td>21000</td>
-                                </tr>
-                                <tr>
-                                    <td>LU</td>
-                                    <td>Unternehmen 0040</td>
-                                    <td>8000</td>
-                                </tr>
-                                <tr>
-                                    <td>LU</td>
-                                    <td>Unternehmen 0041</td>
-                                    <td>7500</td>
-                                </tr>
-                                <tr>
-                                    <td>LU</td>
-                                    <td>Unternehmen 0042</td>
-                                    <td>8200</td>
-                                </tr>
-                                <tr>
-                                    <td>MT</td>
-                                    <td>Unternehmen 0043</td>
-                                    <td>9800</td>
-                                </tr>
-                                <tr>
-                                    <td>MT</td>
-                                    <td>Unternehmen 0044</td>
-                                    <td>9500</td>
-                                </tr>
-                                <tr>
-                                    <td>MT</td>
-                                    <td>Unternehmen 0045</td>
-                                    <td>10100</td>
-                                </tr>
-                                <tr>
-                                    <td>NL</td>
-                                    <td>Unternehmen 0046</td>
-                                    <td>30000</td>
-                                </tr>
-                                <tr>
-                                    <td>NL</td>
-                                    <td>Unternehmen 0047</td>
-                                    <td>32000</td>
-                                </tr>
-                                <tr>
-                                    <td>NL</td>
-                                    <td>Unternehmen 0048</td>
-                                    <td>31000</td>
-                                </tr>
-                                <tr>
-                                    <td>AT</td>
-                                    <td>Unternehmen 0049</td>
-                                    <td>22000</td>
-                                </tr>
-                                <tr>
-                                    <td>AT</td>
-                                    <td>Unternehmen 0050</td>
-                                    <td>25000</td>
-                                </tr>
-                                <tr>
-                                    <td>AT</td>
-                                    <td>Unternehmen 0051</td>
-                                    <td>23000</td>
-                                </tr>
-                                <tr>
-                                    <td>PL</td>
-                                    <td>Unternehmen 0052</td>
-                                    <td>18000</td>
-                                </tr>
-                                <tr>
-                                    <td>PL</td>
-                                    <td>Unternehmen 0053</td>
-                                    <td>20000</td>
-                                </tr>
-                                <tr>
-                                    <td>PL</td>
-                                    <td>Unternehmen 0054</td>
-                                    <td>19000</td>
-                                </tr>
-                                <tr>
-                                    <td>PT</td>
-                                    <td>Unternehmen 0055</td>
-                                    <td>28000</td>
-                                </tr>
-                                <tr>
-                                    <td>PT</td>
-                                    <td>Unternehmen 0056</td>
-                                    <td>27000</td>
-                                </tr>
-                                <tr>
-                                    <td>PT</td>
-                                    <td>Unternehmen 0057</td>
-                                    <td>29000</td>
-                                </tr>
-                                <tr>
-                                    <td>RO</td>
-                                    <td>Unternehmen 0058</td>
-                                    <td>17000</td>
-                                </tr>
-                                <tr>
-                                    <td>RO</td>
-                                    <td>Unternehmen 0059</td>
-                                    <td>16000</td>
-                                </tr>
-                                <tr>
-                                    <td>RO</td>
-                                    <td>Unternehmen 0060</td>
-                                    <td>18000</td>
-                                </tr>
-                                <tr>
-                                    <td>SE</td>
-                                    <td>Unternehmen 0061</td>
-                                    <td>21000</td>
-                                </tr>
-                                <tr>
-                                    <td>SE</td>
-                                    <td>Unternehmen 0062</td>
-                                    <td>22000</td>
-                                </tr>
-                                <tr>
-                                    <td>SE</td>
-                                    <td>Unternehmen 0063</td>
-                                    <td>20000</td>
-                                </tr>
-                                <tr>
-                                    <td>SK</td>
-                                    <td>Unternehmen 0064</td>
-                                    <td>13000</td>
-                                </tr>
-                                <tr>
-                                    <td>SK</td>
-                                    <td>Unternehmen 0065</td>
-                                    <td>14000</td>
-                                </tr>
-                                <tr>
-                                    <td>SK</td>
-                                    <td>Unternehmen 0066</td>
-                                    <td>12000</td>
-                                </tr>
-                                <tr>
-                                    <td>SI</td>
-                                    <td>Unternehmen 0067</td>
-                                    <td>11000</td>
-                                </tr>
-                                <tr>
-                                    <td>SI</td>
-                                    <td>Unternehmen 0068</td>
-                                    <td>12000</td>
-                                </tr>
-                                <tr>
-                                    <td>SI</td>
-                                    <td>Unternehmen 0069</td>
-                                    <td>10000</td>
-                                </tr>
-                                <tr>
-                                    <td>ES</td>
-                                    <td>Unternehmen 0070</td>
-                                    <td>26000</td>
-                                </tr>
-                                <tr>
-                                    <td>ES</td>
-                                    <td>Unternehmen 0071</td>
-                                    <td>28000</td>
-                                </tr>
-                                <tr>
-                                    <td>ES</td>
-                                    <td>Unternehmen 0072</td>
-                                    <td>27000</td>
-                                </tr>
-                                <tr>
-                                    <td>CZ</td>
-                                    <td>Unternehmen 0073</td>
-                                    <td>23000</td>
-                                </tr>
-                                <tr>
-                                    <td>CZ</td>
-                                    <td>Unternehmen 0074</td>
-                                    <td>21000</td>
-                                </tr>
-                                <tr>
-                                    <td>CZ</td>
-                                    <td>Unternehmen 0075</td>
-                                    <td>24000</td>
-                                </tr>
-                                <tr>
-                                    <td>HU</td>
-                                    <td>Unternehmen 0076</td>
-                                    <td>17000</td>
-                                </tr>
-                                <tr>
-                                    <td>HU</td>
-                                    <td>Unternehmen 0077</td>
-                                    <td>16000</td>
-                                </tr>
-                                <tr>
-                                    <td>HU</td>
-                                    <td>Unternehmen 0078</td>
-                                    <td>18000</td>
-                                </tr>
-                                <tr>
-                                    <td>CY</td>
-                                    <td>Unternehmen 0079</td>
-                                    <td>12000</td>
-                                </tr>
-                                <tr>
-                                    <td>CY</td>
-                                    <td>Unternehmen 0080</td>
-                                    <td>11000</td>
-                                </tr>
-                                <tr>
-                                    <td>CY</td>
-                                    <td>Unternehmen 0081</td>
-                                    <td>13000</td>
-                                </tr>
-                            </tbody>
-                        </table>
+    <body class="m-sm-5 m-3" dir="auto">
+        <div class="container-xl">
+            <header>
+                <hr class="mt-sm-5 mb-sm-5 mt-3 mb-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-sm-12">
+                        <a href="index.html"><img src="assets/img/Logo.png" alt="Logo" id="logo" class="mt-3 mb-3" class="d-inline"></a>
+                    </div>
+                    <div class="col-lg-9 col-sm-12">
+                        <nav class="navbar">
+                            <ul class="nav">
+                                <li class="nav-item pe-3"><a href="index.html" class="nav-link link-dark">Startseite</a></li>
+                                <li class="nav-item pe-3"><a href="#" class="nav-link link-dark">Über uns</a></li>
+                                <li class="nav-item pe-3"><a href="#" class="nav-link link-dark">Kontakt</a></li>
+                            </ul>
+                        </nav>  
+                    </div> 
+                </div>  
+                <hr class="mt-sm-5 mb-sm-5 mt-3 mb-3">
+            </header>
+            <main>
+                <div class="row mb-3">
+                    <p>Auf diesere Seite findest du folgende Inhalte:</p>
+                    <div class="col-lg-12">
+                        <ul>
+                            <li class="ms-4"><a href="#einleitung" class="link-dark">Einleitung</a></li>
+                            <li class="ms-4"><a href="#tabelle" class="link-dark">CO2-Tabelle 2023</a></li>
+                            <li class="ms-4"><a href="#fazit" class="link-dark">Fazit</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <br>
-        </main>
-        <footer>
-            <hr class="mt-5 mb-5">
-            <nav>
-                <p class="d-inline pe-1">© Copyright Stephanie Ott 2024</p>
-                <ul class="d-inline">
-                    <li class="d-inline p-1"><a href="#" class="link-dark">Datenschutzerklärung</a></li>
-                    <li class="d-inline p-1"><a href="#" class="link-dark">Impressum</a></li>
-                    <li class="d-inline p-1"><a href="#" class="link-dark">Satzung</a></li>
-                    <li class="d-inline p-1"><a href="#" class="link-dark" target="_blank"><img src="assets/img/instagram.png" class="m-1 footericon">CO2-Instagram</a></li>
-                </ul>
-            </nav> 
-        </footer>
+                <div class="row mb-3" id="einleitung">
+                    <div class="col-lg-12">
+                        <h1 class="c_darkgreen">Klimawandel betrifft uns alle!</h1>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.</p>
+                    </div>
+                </div>
+                <div class="row mb-3" id="tabelle">
+                    <div class="container-fluid">
+                        <div class="table-responsive">
+                            <h2 class="c_darkgreen">CO2-Fußabdruck von Unternehmen der EU-Länder 2023</h2>
+                            <br>
+                                <div class="input-group">
+                                    <span class="input-group-text">Nach Land filtern:</span>
+                                    <input type="text" placeholder="Land" class="form-control" id="inputLand" onkeyup="filterTable('inputLand', 'inputUnternehmen')">
+                                    <span class="input-group-text">Nach Firma filtern:</span>
+                                    <input type="text" placeholder="Firma" class="form-control" id="inputUnternehmen" onkeyup="filterTable('inputLand', 'inputUnternehmen')">
+                                </div>
+                            <br>
+                            <table class="table table-bordered table-hover" id="co2-tabelle">
+                                <caption>Quelle: Eigene Darstellung.</caption>
+                                <thead class="align-top">
+                                    <tr class="text-white c_bg_green">
+                                        <th>Land</th>
+                                        <th>Unternehmen</th>
+                                        <th>CO2-Emissionen in&nbsp;t</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="align-top">
+                                    <tr>
+                                        <td>BE</td>
+                                        <td>Unternehmen 0001</td>
+                                        <td>12000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BE</td>
+                                        <td>Unternehmen 0002</td>
+                                        <td>15000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BE</td>
+                                        <td>Unternehmen 0003</td>
+                                        <td>11000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BG</td>
+                                        <td>Unternehmen 0004</td>
+                                        <td>18000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BG</td>
+                                        <td>Unternehmen 0005</td>
+                                        <td>20000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>BG</td>
+                                        <td>Unternehmen 0006</td>
+                                        <td>17000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DK</td>
+                                        <td>Unternehmen 0007</td>
+                                        <td>14000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DK</td>
+                                        <td>Unternehmen 0008</td>
+                                        <td>16000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DK</td>
+                                        <td>Unternehmen 0009</td>
+                                        <td>13000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DE</td>
+                                        <td>Unternehmen 0010</td>
+                                        <td>25000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DE</td>
+                                        <td>Unternehmen 0011</td>
+                                        <td>22000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DE</td>
+                                        <td>Unternehmen 0012</td>
+                                        <td>27000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EE</td>
+                                        <td>Unternehmen 0013</td>
+                                        <td>9000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EE</td>
+                                        <td>Unternehmen 0014</td>
+                                        <td>9500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>EE</td>
+                                        <td>Unternehmen 0015</td>
+                                        <td>8800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FI</td>
+                                        <td>Unternehmen 0016</td>
+                                        <td>20000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FI</td>
+                                        <td>Unternehmen 0017</td>
+                                        <td>18000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FI</td>
+                                        <td>Unternehmen 0018</td>
+                                        <td>21000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>FR</td>
+                                        <td>Unternehmen 0019</td>
+                                        <td>28000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SA</td>
+                                        <td>Unternehmen 0020</td>
+                                        <td>32000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SO</td>
+                                        <td>Unternehmen 0021</td>
+                                        <td>35000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GR</td>
+                                        <td>Unternehmen 0022</td>
+                                        <td>29000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GR</td>
+                                        <td>Unternehmen 0023</td>
+                                        <td>27000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>GR</td>
+                                        <td>Unternehmen 0024</td>
+                                        <td>30000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IE</td>
+                                        <td>Unternehmen 0025</td>
+                                        <td>24000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IE</td>
+                                        <td>Unternehmen 0026</td>
+                                        <td>23000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IE</td>
+                                        <td>Unternehmen 0027</td>
+                                        <td>25000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT</td>
+                                        <td>Unternehmen 0028</td>
+                                        <td>31000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT</td>
+                                        <td>Unternehmen 0029</td>
+                                        <td>32000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT</td>
+                                        <td>Unternehmen 0030</td>
+                                        <td>30000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HR</td>
+                                        <td>Unternehmen 0031</td>
+                                        <td>12000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HR</td>
+                                        <td>Unternehmen 0032</td>
+                                        <td>11000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HR</td>
+                                        <td>Unternehmen 0033</td>
+                                        <td>13000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LV</td>
+                                        <td>Unternehmen 0034</td>
+                                        <td>17000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LV</td>
+                                        <td>Unternehmen 0035</td>
+                                        <td>18000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LV</td>
+                                        <td>Unternehmen 0036</td>
+                                        <td>16000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LT</td>
+                                        <td>Unternehmen 0037</td>
+                                        <td>19000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LT</td>
+                                        <td>Unternehmen 0038</td>
+                                        <td>20000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LT</td>
+                                        <td>Unternehmen 0039</td>
+                                        <td>21000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LU</td>
+                                        <td>Unternehmen 0040</td>
+                                        <td>8000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LU</td>
+                                        <td>Unternehmen 0041</td>
+                                        <td>7500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LU</td>
+                                        <td>Unternehmen 0042</td>
+                                        <td>8200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MT</td>
+                                        <td>Unternehmen 0043</td>
+                                        <td>9800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MT</td>
+                                        <td>Unternehmen 0044</td>
+                                        <td>9500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MT</td>
+                                        <td>Unternehmen 0045</td>
+                                        <td>10100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NL</td>
+                                        <td>Unternehmen 0046</td>
+                                        <td>30000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NL</td>
+                                        <td>Unternehmen 0047</td>
+                                        <td>32000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>NL</td>
+                                        <td>Unternehmen 0048</td>
+                                        <td>31000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AT</td>
+                                        <td>Unternehmen 0049</td>
+                                        <td>22000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AT</td>
+                                        <td>Unternehmen 0050</td>
+                                        <td>25000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AT</td>
+                                        <td>Unternehmen 0051</td>
+                                        <td>23000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PL</td>
+                                        <td>Unternehmen 0052</td>
+                                        <td>18000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PL</td>
+                                        <td>Unternehmen 0053</td>
+                                        <td>20000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PL</td>
+                                        <td>Unternehmen 0054</td>
+                                        <td>19000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PT</td>
+                                        <td>Unternehmen 0055</td>
+                                        <td>28000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PT</td>
+                                        <td>Unternehmen 0056</td>
+                                        <td>27000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PT</td>
+                                        <td>Unternehmen 0057</td>
+                                        <td>29000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RO</td>
+                                        <td>Unternehmen 0058</td>
+                                        <td>17000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RO</td>
+                                        <td>Unternehmen 0059</td>
+                                        <td>16000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>RO</td>
+                                        <td>Unternehmen 0060</td>
+                                        <td>18000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SE</td>
+                                        <td>Unternehmen 0061</td>
+                                        <td>21000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SE</td>
+                                        <td>Unternehmen 0062</td>
+                                        <td>22000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SE</td>
+                                        <td>Unternehmen 0063</td>
+                                        <td>20000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SK</td>
+                                        <td>Unternehmen 0064</td>
+                                        <td>13000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SK</td>
+                                        <td>Unternehmen 0065</td>
+                                        <td>14000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SK</td>
+                                        <td>Unternehmen 0066</td>
+                                        <td>12000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SI</td>
+                                        <td>Unternehmen 0067</td>
+                                        <td>11000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SI</td>
+                                        <td>Unternehmen 0068</td>
+                                        <td>12000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SI</td>
+                                        <td>Unternehmen 0069</td>
+                                        <td>10000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES</td>
+                                        <td>Unternehmen 0070</td>
+                                        <td>26000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES</td>
+                                        <td>Unternehmen 0071</td>
+                                        <td>28000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ES</td>
+                                        <td>Unternehmen 0072</td>
+                                        <td>27000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CZ</td>
+                                        <td>Unternehmen 0073</td>
+                                        <td>23000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CZ</td>
+                                        <td>Unternehmen 0074</td>
+                                        <td>21000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CZ</td>
+                                        <td>Unternehmen 0075</td>
+                                        <td>24000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HU</td>
+                                        <td>Unternehmen 0076</td>
+                                        <td>17000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HU</td>
+                                        <td>Unternehmen 0077</td>
+                                        <td>16000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HU</td>
+                                        <td>Unternehmen 0078</td>
+                                        <td>18000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CY</td>
+                                        <td>Unternehmen 0079</td>
+                                        <td>12000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CY</td>
+                                        <td>Unternehmen 0080</td>
+                                        <td>11000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CY</td>
+                                        <td>Unternehmen 0081</td>
+                                        <td>13000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3" id="fazit">
+                    <div class="col-lg-12">
+                        <h2 class="c_darkgreen">Fazit</h1>
+                    </div>
+                    <div class="col-lg-8 col-sm-12">
+                        <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <br>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <br>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <img src="assets/img/Auswertung.jpg" class="img-fluid" alt="Auswertungsdiagram" id="auswertungsdiagram" class="mt-3 mb-3">    
+                        <p class="text-secondary pt-1">Quelle: Eigene Darstellung.</p>
+                    </div>
+                </div>
+                <br>
+            </main>
+            <footer>
+                <hr class="mt-sm-5 mb-sm-5 mt-3 mb-3">
+                <nav class="navbar">
+                    <ul class="nav">
+                        <li class="nav-item pe-3">© Stephanie Ott (4237273) 2024</li>
+                        <li class="nav-item pe-3"><a href="#" class="nav-link link-dark">Datenschutzerklärung</a></li>
+                        <li class="nav-item pe-3"><a href="#" class="nav-link link-dark">Impressum</a></li>
+                        <li class="nav-item pe-3"><a href="#" class="nav-link link-dark">Satzung</a></li>
+                        <li class="nav-item pe-3"><a href="#" class="link-dark nav-link" target="_blank"><img src="assets/img/instagram.png" class="m-1 footericon">CO2-Instagram</a></li>
+                    </ul>
+                </nav> 
+            </footer> 
 
-        <script>
-            function filterTable(inputCompany, inputCountry) {
-              var inputCompanyElement = document.getElementById(inputCompany);
-              var inputCountryElement = document.getElementById(inputCountry);
-              var filterCompany = inputCompanyElement.value.toUpperCase();
-              var filterCountry = inputCountryElement.value.toUpperCase();
-              var table = document.getElementById("co2-tabelle");
-              var tr = table.getElementsByTagName("tr");
-              for (var i = 0; i < tr.length; i++) {
-                var tdCompany = tr[i].getElementsByTagName("td")[1];
-                var tdCountry = tr[i].getElementsByTagName("td")[0];
-                if (tdCompany && tdCountry) {
-                  var txtValueCompany = tdCompany.textContent || tdCompany.innerText;
-                  var txtValueCountry = tdCountry.textContent || tdCountry.innerText;
-                  if (txtValueCompany.toUpperCase().indexOf(filterCompany) > -1 && txtValueCountry.toUpperCase().indexOf(filterCountry) > -1) {
-                    tr[i].style.display = "";
-                  } else {
-                    tr[i].style.display = "none";
-                  }
-                }
-              }
-            }
-            </script>
-            
+            <!-- JS -->
+            <script src="assets/js/tablefilter.js"></script>
+        </div>
      </body>
 </html>
