@@ -24,7 +24,7 @@ function filterTable(inputLand, inputUnternehmen) {
         // Inhalt der jeweiligen Spalte der aktuellen Zeile als Variable gespeichert (textContent oder innerText, je nach Darstellung im Browser) //
         var txtValueLand = tdLand.textContent || tdLand.innerText;
         var txtValueUnternehmen = tdUnternehmen.textContent || tdUnternehmen.innerText;
-        // Prüft Bedingungen (vgl. in Großbuchstaben): ist der gesuchte Filterwert/Substring in der jeweiligen Spalte der Zeile enthalten? //
+        // Prüft Bedingungen (vgl. in Großbuchstaben): Ist der gesuchte Filterwert/Substring in der jeweiligen Spalte der Zeile enthalten? //
         if (txtValueLand.toUpperCase().indexOf(filterLand) > -1 && txtValueUnternehmen.toUpperCase().indexOf(filterUnternehmen) > -1) {
             // Einblenden, wenn Bedingungen stimmen //
             tr[i].style.display = "";
